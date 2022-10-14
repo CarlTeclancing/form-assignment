@@ -14,7 +14,7 @@ function checkName(){
     }
     else{
         fname.value = "";
-        sname.value = "";
+    
     }
 
 }
