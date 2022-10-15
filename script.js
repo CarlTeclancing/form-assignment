@@ -5,19 +5,20 @@ const pass = document.getElementById('password');
 const pass2 = document.getElementById('password2');
 
 let btn = document.getElementById('btn');
-
-
+let msg = document.getElementById("nameError");
 
 btn.addEventListener("click", function(){
-    //checkName();
-    checkPass();
+    checkName();
+    //checkPass();
 });
 
 function checkName(){
     const fn = fname.value.length;
     const sn = sname.value.length;
     if((fn < 3) || (sn < 3)){
-        alert("name should not be less than 3");
+        
+        msg.style.display = "inline"
+        
     }
     else if((fn > 3) || (sn > 3)){
         fname.value = "";

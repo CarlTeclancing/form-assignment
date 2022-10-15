@@ -19,8 +19,12 @@ input{
     width: 90%;
     height: 40px;
 }
-button{
+input:last-of-type{
     background-color: rgb(56, 131, 196);
     color: white;
     border: none;
+}
+span{
+    color: red;
+    display: none;
 }
